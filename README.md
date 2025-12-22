@@ -1,16 +1,93 @@
-# React + Vite
+# Weather App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive weather application built with React and Vite. This application allows users to search for weather conditions in any city and displays both current weather and a 5-day forecast.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Real-time Weather:** Get current temperature, weather description, and wind speed.
+- **5-Day Forecast:** View weather predictions for the upcoming days.
+- **Search Functionality:** Easily search for any city worldwide.
+- **Responsive Design:** Beautiful UI with glassmorphism effects using Tailwind CSS.
+- **Fast Performance:** Powered by Vite for lightning-fast development and build times.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend:** React.js
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS
+- **HTTP Client:** Axios
+- **API:** OpenWeatherMap
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Follow these instructions to get a copy of the project up and running on your local machine.
+
+### Prerequisites
+
+Make sure you have Node.js installed on your system.
+
+### Installation
+
+1. **Clone the repository**
+
+   ```bash
+   git clone <repository-url>
+   cd Weather-app
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+### Configuration
+
+The application uses the OpenWeatherMap API.
+
+> **Note:** The API key is currently set in `src/App.jsx`. For a production environment, it is recommended to use environment variables.
+
+### Running the Application
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) in your browser to view the app.
+
+### Building for Production
+
+To create a production build:
+
+```bash
+npm run build
+```
+
+To preview the production build locally:
+
+```bash
+npm run preview
+```
+
+## Project Structure
+
+```
+Weather-app/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── SearchBar.jsx
+│   │   └── WeatherCard.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+├── index.html
+├── package.json
+├── vite.config.js
+└── README.md
+```
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
